@@ -1,6 +1,24 @@
-h1 {
+body {
+    text-align: center;
     font-family:Sans-Serif;
+    padding:0;
+    border:0;
+    margin:0;
+}
+#page-wrap {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+#title {
+    font-family:Sans-Serif;
+    font-size:2em;
+    padding:0;
+    border:0;
+    margin:0;
 }
 header {
-    background-color:#cccccc;
+    background-color:#dddddd;
+    padding:5px;
+    
 }
