@@ -1,4 +1,4 @@
-Carson-Shook.github.io
+carson-shook.github.io
 ======================
 
 My personal site
