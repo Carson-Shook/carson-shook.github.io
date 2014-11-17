@@ -19,10 +19,9 @@ body {
     margin: 0;
 }
 header {
-	position: fixed;
 	background-color: #eee;
 	background-image: url("ticks.png");
-	border-top: 3px solid #313132;
+	border-top: 0px solid #313132;
 	border-bottom: 0px solid #eee;
 	box-shadow: 0px 0px 4px black;
 	padding: 0px;
@@ -43,9 +42,8 @@ nav {
 	padding: 10px 10px 10px 10px;
 }
 .navigation:hover {
-	transition: .1s ease-in-out;
-	color: #f5f5f5;
-	background-color: #313132;
+	transition: .2s ease-in-out;
+	background-color: #bbbbc5;
 	text-decoration: none;
 }
 #content-wrap {
@@ -53,15 +51,7 @@ nav {
     width: 70%;
     margin: 0 auto;
 }
-@media @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min-device-pixel-ratio: 1.5)
-#content-wrap {
-	width: 100%;
-}
 #title {
-	transition: .2s ease-in-out;
 	display: inline-block;
     font-family: "Raleway", sans-serif;
 	font-weight: 300;
@@ -73,14 +63,27 @@ only screen and (min-device-pixel-ratio: 1.5)
     margin: 0;
 }
 #title:hover {
-	transition: .1s ease-in-out;
-	color: #f5f5f5;
-	background-color: #313131;
+	transition: .2s ease-in-out;
+	background-color: #bbbbc5;
+}
+#productquote {
+	display: inline;
+	font-family: "Raleway", sans-serif;
+	font-weight: 900;
+	font-size: 2.5em;
+	color: white;
+	vertical-align: middle;
+}
+#productimage {
+	display: inline;
+	margin: 40px;
+	box-shadow: 0px 0px 4px black;
+	vertical-align: middle;
 }
 #content {
 	background-color: white;
 	box-shadow: 0px 0px 4px black;
 	padding: 20px;
-	margin-top: 70px;
+	margin-top: 0px;
 	margin-bottom: 50px;
 }
