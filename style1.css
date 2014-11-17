@@ -1,24 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,300,900);
+html {
+	background-color: #313132;
+	background-image: url("escheresque_ste.png");
+}
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5)
+html {
+	background-image: url("escheresque_ste_@2X.png")
+}
 body {
     text-align: center;
-    font-family:Sans-Serif;
-    padding:0;
-    border:0;
-    margin:0;
+    font-family: sans-serif;
+	font-size: 1em;
+    padding: 0;
+    border: 0;
+    margin: 0;
 }
-#page-wrap {
+header {
+	position: fixed;
+	background-color: #eee;
+	background-image: url("ticks.png");
+	border-top: 3px solid #313132;
+	border-bottom: 0px solid #eee;
+	box-shadow: 0px 0px 4px black;
+	padding: 0px;
+	width: 100%;
+	top: 0px;
+}
+nav {
+	display: inline-block;
+	font-family: "Raleway", sans-serif;
+	font-weight: 900;
+	font-size: 1.2em;
+	vertical-align: 35%;
+}
+.navigation {
+	transition: .2s ease-in-out;
+	color: #313132;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+}
+.navigation:hover {
+	transition: .1s ease-in-out;
+	color: #f5f5f5;
+	background-color: #313132;
+	text-decoration: none;
+}
+#content-wrap {
     text-align: left;
     width: 70%;
     margin: 0 auto;
 }
 #title {
-    font-family:Sans-Serif;
-    font-size:20pt;
-    padding:0;
-    border:0;
-    margin:0;
+	transition: .2s ease-in-out;
+	display: inline-block;
+    font-family: "Raleway", sans-serif;
+	font-weight: 300;
+    font-size: 2.5em;
+	font-style: none;
+	color: #313132;
+    padding: 0px 10px 0px 10px;
+    border: 0;
+    margin: 0;
 }
-header {
-    background-color:#dddddd;
-    padding:5px;
-    
+#title:hover {
+	transition: .1s ease-in-out;
+	color: #f5f5f5;
+	background-color: #313131;
+}
+#content {
+	background-color: white;
+	box-shadow: 0px 0px 4px black;
+	padding: 20px;
+	margin-top: 70px;
+	margin-bottom: 50px;
 }
