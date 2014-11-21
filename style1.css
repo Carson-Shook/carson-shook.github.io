@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:300,200,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,300,200,900);
 html {
 	/*background-color: #313132;*/
 	background-image: url("dark_wall.png"); /* Background pattern from subtlepatterns.com */
@@ -33,7 +33,17 @@ article {
 	background-color: whitesmoke;
 	padding: 20px;
 	margin-top: 0px;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
+}
+footer {
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 1.0em;
+	color: whitesmoke;
+	vertical-align: middle;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	opacity: 0.3;
 }
 h1 {
 	font-family: "Raleway", sans-serif;
@@ -51,7 +61,7 @@ h2 {
 }
 h3 {
 	font-family: "Raleway", sans-serif;
-	font-weight: 900;
+	font-weight: 600;
 	font-size: 1.4em;
 	margin-top: 20px;
 	margin-bottom: 0px;
@@ -110,6 +120,10 @@ p {
 }
 #github {
 	float:right;
+}
+#githubfooter {
+	height: 30px;
+	vertical-align: middle;
 }
 #title {
 	transition: .2s ease-in-out;
