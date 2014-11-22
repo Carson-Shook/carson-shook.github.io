@@ -6,13 +6,7 @@
 		<link rel="stylesheet" href="http://carson-shook.github.io/style1.css">
 			</head>
 	<body id="index">
-		<nav id="topnav">
-			<a href="index.html" id="title">CARSON SHOOK</a><!--
-															 <a href="#" class="navigation">Projects ▾</a><!--
-															 --><a href="#" class="navigation">Blog</a><!--
-																										--><a href="#" class="navigation">Contact</a><!--
-																																					  <a href="https://github.com/Carson-Shook" class="navigation" id="github">Fork me on GitHub</a>-->
-		</nav>
+		{% include navigation.html %}
 		<header>
 			<div class="content-wrap">
 				<img src="paperfan_512x512.png" width="250px" height="250px" id="productimage"/>
@@ -29,4 +23,5 @@
 			<a href="http://github.com/carson-shook/"><img src="footer-logo.png" id="githubfooter"/></a>
 		</footer>
 	</body>
-</html><--!{% include navigation.html %}{% include footer.html %}-->
+</html>
+{% include footer.html %}
