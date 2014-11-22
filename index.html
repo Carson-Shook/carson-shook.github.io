@@ -28,13 +28,6 @@
 				<p>Morbi viverra luctus metus vel efficitur. Phasellus eget diam sit amet erat sollicitudin euismod. Nunc ut justo iaculis, mattis erat id, faucibus ligula. Nam magna augue, iaculis vel turpis id, dictum pharetra felis. Pellentesque lobortis orci orci. Nulla posuere orci ut dui euismod placerat. In laoreet, enim a iaculis suscipit, libero nisi tempor mauris, a efficitur sem eros ac augue. Fusce non gravida augue. Aliquam non hendrerit justo, rhoncus molestie eros. Vestibulum ornare, purus at auctor placerat, sem orci suscipit nulla, id fringilla enim augue non purus. Donec a lorem vel tortor vehicula porttitor quis et sapien.</p>
 				
 				<p>Donec at ex id neque consectetur mattis quis eu ex. Vivamus nec lobortis velit. Mauris id sagittis augue, ac condimentum tortor. Pellentesque non erat eget libero gravida tincidunt. Nullam vitae velit luctus, accumsan elit et, egestas leo. Maecenas iaculis lorem eu eros tincidunt, ut dapibus ante vulputate. Praesent in finibus risus. Vestibulum pellentesque enim commodo, venenatis ligula quis, venenatis sem.</p>
-				{% for post in site.posts offset: 0 limit: 50 %}
-				<a href="{{ post.url }}">{{ post.title }}</a>
-				<p>
-				{{ post.summary }}
-				</p>
-				{% endfor %}
-				
 			</div>
         </article>
 		{% include footer.html %}
