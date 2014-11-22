@@ -1,14 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:600,300,200,900);
 html {
 	/*background-color: #313132;*/
-	background-image: url("dark_wall.png"); /* Background pattern from subtlepatterns.com */
-}
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min-device-pixel-ratio: 1.5)
-html {
-	background-image: url("escheresque_ste_@2X.png")
+	background-image: url("http://carson-shook.github.io/img/dark_wall.png"); /* Background pattern from subtlepatterns.com */
 }
 body {
     text-align: center;
