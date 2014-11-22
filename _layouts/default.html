@@ -7,21 +7,11 @@
 			</head>
 	<body id="index">
 		{% include navigation.html %}
-		<header>
-			<div class="content-wrap">
-				<img src="paperfan_512x512.png" width="250px" height="250px" id="productimage"/>
-				<span id="productquote">"Makes invoices a breeze"</span>
-			</div>
-		</header>
 		<article>
 			<div class="content-wrap">
 				{{ content }}
 			</div>
 		</article>
-		<footer>
-			Hosted on
-			<a href="http://github.com/carson-shook/"><img src="footer-logo.png" id="githubfooter"/></a>
-		</footer>
+		{% include footer.html %}
 	</body>
 </html>
-{% include footer.html %}
