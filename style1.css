@@ -95,10 +95,10 @@ p {
 	color: #313132;
 	text-decoration: none;
 }
-#blog.navigation {
+body#blog .navigation#blog {
 	border-top: 4px solid slategray;
 }
-#contact.navigation {
+body#contact .navigation#contact {
 	border-top: 4px solid slategray;
 }
 #topnav {
