@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:600,400,300,200,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,300,200,900);
 html {
 	/*background-color: #313132;*/
 	background-image: url("http://carson-shook.github.io/img/dark_wall.png"); /* Background pattern from subtlepatterns.com */
@@ -40,13 +40,13 @@ footer {
 }
 h1 {
 	font-family: "Raleway", sans-serif;
-	font-weight: 300;
+	font-weight: 200;
 	font-size: 3em;
 	margin-bottom: 0px;
 }
 h2 {
 	font-family: "Raleway", sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 1.6em;
 	color: darkslategray;
 	margin-top: 0px;
@@ -54,7 +54,7 @@ h2 {
 }
 h3 {
 	font-family: "Raleway", sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 1.4em;
 	margin-top: 20px;
 	margin-bottom: 0px;
@@ -62,8 +62,8 @@ h3 {
 }
 p {
 	font-family: "Ralway", sans-serif;
-	font-weight: 400;
-	font-size: 1.0em;
+	font-weight: 300;
+	font-size: 1.2em;
 	line-height: 150%;
 	margin-top: 5px;
 }
