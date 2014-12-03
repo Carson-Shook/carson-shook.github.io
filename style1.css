@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,600,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:700,400,700italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,700italic,700,300italic);
 html {
 	/*background-color: #313132;*/
 	background-image: url("img/dark_wall.png"); /* Background pattern from subtlepatterns.com */
@@ -62,8 +63,8 @@ h3 {
 	color: #313132;
 }
 p {
-	font-family: "Lato", sans-serif;
-	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
 	font-size: 1.3em;
 	line-height: 150%;
 	margin-top: 5px;
