@@ -1,4 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:600,300,200,900);
+@font-face {
+	font-family: "Lato";
+	src: url("http://carson-shook.github.io/Lato/Lato-Regular")
+}
+@font-face {
+	font-family: "Lato";
+	src: url("http://carson-shook.github.io/Lato/Lato-Bold")
+	font-weight: bold;
+}
 html {
 	/*background-color: #313132;*/
 	background-image: url("http://carson-shook.github.io/img/dark_wall.png"); /* Background pattern from subtlepatterns.com */
@@ -61,7 +70,7 @@ h3 {
 	color: #313132;
 }
 p {
-	font-family: "Ralway", sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 300;
 	font-size: 1.2em;
 	line-height: 150%;
