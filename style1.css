@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:600,300,200,900);
 @font-face {
 	font-family: "Lato";
-	src: url("fonts/lato/Lato-Light.ttf")
+	src: url("http://carson-shook.gitub.io/fonts/lato/Lato-Light.ttf")
 	format("ttf");
 	font-weight: 300;
 }
@@ -14,13 +14,13 @@
 }
 @font-face {
 	font-family: "Lato";
-	src: url("fonts/lato/Lato-Bold.ttf")
+	src: url("http://carson-shook.gitub.io/fonts/lato/Lato-Bold.ttf")
 	format("ttf");
 	font-weight: 700;
 }
 @font-face {
 	font-family: "Lato";
-	src: url("fonts/lato/Lato-BoldItalic.ttf")
+	src: url("http://carson-shook.gitub.io/fonts/lato/Lato-BoldItalic.ttf")
 	format("ttf");
 	font-weight: 700;
 	font-style: italic
