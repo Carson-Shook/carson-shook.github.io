@@ -1,30 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:600,300,200,900);
-@font-face {
-	font-family: "Lato";
-	src: url("http://carson-shook.gitub.io/fonts/lato/Lato-Light.ttf")
-	format("ttf");
-	font-weight: 300;
-}
-@font-face {
-	font-family: "Lato";
-	src: url("http://carson-shook.gitub.io/fonts/lato/Lato-LightItalic.ttf")
-	format("ttf");
-	font-weight: 300;
-	font-style: italic;
-}
-@font-face {
-	font-family: "Lato";
-	src: url("http://carson-shook.gitub.io/fonts/lato/Lato-Bold.ttf")
-	format("ttf");
-	font-weight: 700;
-}
-@font-face {
-	font-family: "Lato";
-	src: url("http://carson-shook.gitub.io/fonts/lato/Lato-BoldItalic.ttf")
-	format("ttf");
-	font-weight: 700;
-	font-style: italic
-}
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,600,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic);
 html {
 	/*background-color: #313132;*/
 	background-image: url("img/dark_wall.png"); /* Background pattern from subtlepatterns.com */
