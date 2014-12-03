@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:600,300,200,900);
 @font-face {
 	font-family: "Lato";
-	src: url("http://carson-shook.github.io/Lato/Lato-Regular")
+	src: url("http://carson-shook.github.io/Lato/Lato-Light")
 }
 @font-face {
 	font-family: "Lato";
@@ -70,11 +70,7 @@ h3 {
 	color: #313132;
 }
 p {
-<<<<<<< HEAD
 	font-family: "Lato", sans-serif;
-=======
-	font-family: "Raleway", sans-serif;
->>>>>>> FETCH_HEAD
 	font-weight: 300;
 	font-size: 1.2em;
 	line-height: 150%;
