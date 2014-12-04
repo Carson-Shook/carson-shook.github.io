@@ -158,7 +158,7 @@ body#contact .navigation#contact {
 	border: solid 1px #bbbbc5;
 	border-radius: 8px;
 	color: darkslategray;
-	padding: 15px 10px 15px 10px;
+	padding: 10px;
 	text-decoration: none;
 }
 .postnav:hover {
@@ -177,21 +177,21 @@ body#contact .navigation#contact {
 	-ms-filter: "FlipH";
 	height: 28px;
 	vertical-align: middle;
-	padding-right: 5px;
+	padding-left: 8px;
 }
 .postnav:hover #previous {
 	transition: .2s ease-in-out;
-	filter: invert(100%)
+	filter: invert(100%);
 	-webkit-filter: invert(100%);
 }
 #next {
 	transition: .2s ease-in-out;
 	height: 28px;
 	vertical-align: middle;
-	padding-left: 5px;
+	padding-left: 8px;
 }
 .postnav:hover #next {
 	transition: .2s ease-in-out;
-	filter: invert(100%)
+	filter: invert(100%);
 	-webkit-filter: invert(100%);
 }
