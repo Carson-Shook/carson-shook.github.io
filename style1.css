@@ -153,9 +153,17 @@ body#contact .navigation#contact {
 	vertical-align: middle;
 }
 .postnav {
-	background-color: slategray;
+	transition: .2s ease-in-out;
+	background-color: #e3e3e6;
+	border: solid 1px #bbbbc5;
 	border-radius: 8px;
+	color: darkslategray;
+	padding: 15px 10px 15px 10px;
 }
+.postnav:hover {
+	transition: .2s ease-in-out;
+	background-color: #e3e3e6;
+	color: #313132;
 #previous {
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
@@ -163,4 +171,8 @@ body#contact .navigation#contact {
 	transform: scaleX(-1);
 	filter: FlipH;
 	-ms-filter: "FlipH";
+	height: 28px;
+}
+#next {
+	height: 28px;
 }
