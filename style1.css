@@ -180,7 +180,7 @@ body#contact .navigation#contact {
 }
 .postnav:hover #previous {
 	transition: .2s ease-in-out;
-	filter: invert(1.0);
+	filter: invert(100%);
 }
 #next {
 	transition: .2s ease-in-out;
@@ -190,6 +190,6 @@ body#contact .navigation#contact {
 }
 .postnav:hover #next {
 	transition: .2s ease-in-out;
-	filter: invert(1.0);
+	filter: invert(100%);
 	padding-right: 5px;
 }
