@@ -164,6 +164,7 @@ body#contact .navigation#contact {
 	transition: .2s ease-in-out;
 	background-color: #e3e3e6;
 	color: #313132;
+}
 #previous {
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
