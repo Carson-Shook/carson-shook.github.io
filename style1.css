@@ -159,13 +159,16 @@ body#contact .navigation#contact {
 	border-radius: 8px;
 	color: darkslategray;
 	padding: 15px 10px 15px 10px;
+	text-decoration: none;
 }
 .postnav:hover {
 	transition: .2s ease-in-out;
-	background-color: #e3e3e6;
-	color: #313132;
+	background-color: darkslategray;
+	border: solid 1px transparent;
+	color: whitesmoke;
 }
 #previous {
+	transition: .2s ease-in-out;
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
@@ -173,7 +176,20 @@ body#contact .navigation#contact {
 	filter: FlipH;
 	-ms-filter: "FlipH";
 	height: 28px;
+	vertical-align: middle;
+}
+.postnav:hover #previous {
+	transition: .2s ease-in-out;
+	filter: invert(1.0);
 }
 #next {
+	transition: .2s ease-in-out;
 	height: 28px;
+	vertical-align: middle;
+	padding-left: 5px;
+}
+.postnav:hover #next {
+	transition: .2s ease-in-out;
+	filter: invert(1.0);
+	padding-right: 5px;
 }
