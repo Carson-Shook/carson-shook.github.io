@@ -2,14 +2,13 @@
 layout: default
 ---
 
-<div class="content">    
-	{% include post_header.html %}
-    {{ content }}
+{% include post_header.html %}
+{{ content }}
+<div class="pagination">
 	{% if page.previous.url %}
 		<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}" class="postnav"><img src="http://carson-shook.github.io/img/arrow.png" id="previous" />{{page.previous.title}}</a>
 	{% endif %}
 	{% if page.next.url %}
 		<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}" class="postnav">{{page.next.title}}<img src="http://carson-shook.github.io/img/arrow.png" id="next" /></a>
-	{% endif %} </p>
+	{% endif %}
 </div>
-    

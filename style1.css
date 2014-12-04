@@ -152,18 +152,21 @@ body#contact .navigation#contact {
 	margin: 40px;
 	vertical-align: middle;
 }
+.pagination {
+	text-align: center;
+}
 .postnav {
 	transition: .2s ease-in-out;
 	background-color: #e3e3e6;
 	border: solid 1px #bbbbc5;
-	border-radius: 8px;
+	border-radius: 6px;
 	color: darkslategray;
-	padding: 10px;
+	padding: 8px 6px 8px 6px;
 	text-decoration: none;
 }
 .postnav:hover {
 	transition: .2s ease-in-out;
-	background-color: darkslategray;
+	background-color: slategray;
 	border: solid 1px transparent;
 	color: whitesmoke;
 }
@@ -176,7 +179,7 @@ body#contact .navigation#contact {
 	filter: FlipH;
 	-ms-filter: "FlipH";
 	height: 28px;
-	vertical-align: middle;
+	vertical-align: -50%;
 	padding-left: 8px;
 }
 .postnav:hover #previous {
