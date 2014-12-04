@@ -177,10 +177,12 @@ body#contact .navigation#contact {
 	-ms-filter: "FlipH";
 	height: 28px;
 	vertical-align: middle;
+	padding-right: 5px;
 }
 .postnav:hover #previous {
 	transition: .2s ease-in-out;
-	filter: invert(100%);
+	filter: invert(100%)
+	-webkit-filter: invert(100%);
 }
 #next {
 	transition: .2s ease-in-out;
@@ -190,6 +192,6 @@ body#contact .navigation#contact {
 }
 .postnav:hover #next {
 	transition: .2s ease-in-out;
-	filter: invert(100%);
-	padding-right: 5px;
+	filter: invert(100%)
+	-webkit-filter: invert(100%);
 }
