@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,600,900);
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,700italic,700,300italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
 html {
 	/*background-color: #313132;*/
 	background-image: url("img/dark_wall.png"); /* Background pattern from subtlepatterns.com */
@@ -41,7 +40,7 @@ article {
 	/*margin-bottom: 50px;*/
 }
 footer {
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 600;
 	font-size: 1.0em;
 	color: whitesmoke;
@@ -74,7 +73,7 @@ h3 {
 	color: #313132;
 }
 p {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-size: 1.3em;
 	line-height: 150%;
