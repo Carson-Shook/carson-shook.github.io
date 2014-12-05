@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,600,900);
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,700italic,700,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
 html {
 	/*background-color: #313132;*/
 	background-image: url("img/dark_wall.png"); /* Background pattern from subtlepatterns.com */
@@ -73,11 +74,18 @@ h3 {
 	color: #313132;
 }
 p {
-	font-family: "Roboto", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	font-size: 1.3em;
 	line-height: 150%;
 	margin-top: 5px;
+}
+code {
+	background-color: #e3e3e6;
+	border: solid 1px #bbbbc5;
+	border-radius: 6px;
+	color: darkslategray;
+	padding: 8px 6px 8px 6px;
 }
 .content-wrap {
 	text-align: left;
