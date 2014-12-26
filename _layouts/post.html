@@ -6,7 +6,7 @@ layout: default
 {{ content }}
 <div class="pagination">
 	{% if page.previous.url %}
-    <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}" class="postnav"><img src="http://carson-shook.github.io/img/arrow.png" id="previous" />
+    <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}" class="postnav" id="navback"><img src="http://carson-shook.github.io/img/arrow.png" id="previous" />
         <script type="text/javascript">
             var string = "{{page.previous.title}}";
             if(string.length > 25) {
@@ -17,7 +17,7 @@ layout: default
     </a>
 	{% endif %}
 	{% if page.next.url %}
-    <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}" class="postnav">
+    <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}" class="postnav" id="navforward">
         <script type="text/javascript">
             var string = "{{page.next.title}}";
             if(string.length > 25) {

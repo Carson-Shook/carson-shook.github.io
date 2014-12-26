@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,600,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,700italic,700,300italic);
 html {
 	/*background-color: #313132;*/
@@ -15,9 +15,8 @@ body {
 }
 nav {
 	background-color: #e3e3e6;
-	width: 100%;
-	height: 48px;
 	display: block;
+	width: 100%;
 	height: 50px;
 	box-sizing: border-box;
 	-moz-box-sizing:border-box;
@@ -84,16 +83,25 @@ h3 {
 p {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	line-height: 150%;
 	margin-top: 5px;
+}
+ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 150%;
+}
+li {
+    margin-bottom: 15px;
 }
 code {
 	background-color: #e3e3e6;
 	border: solid 1px #bbbbc5;
-	border-radius: 6px;
+	border-radius: 4px;
 	color: darkslategray;
-	padding: 8px 6px 8px 6px;
+	padding: 2px 4px 2px 4px;
 }
 .content-wrap {
 	text-align: left;
@@ -110,13 +118,13 @@ code {
 	box-sizing: border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	font-family: "Raleway", sans-serif;
-	font-weight: 900;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
 	font-size: 1.2em;
 	color: darkslategray;
 	text-decoration: none;
 	border-top: 4px solid transparent;
-	padding: 9px 10px 0px 10px;
+	padding: 8px 10px 0px 10px;
 	height: 100%;
 }
 .navigation:hover {
@@ -180,22 +188,36 @@ body#contact .navigation#contact {
 }
 /* Pagination */
 .pagination {
-	text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    background-color: #e3e3e6;
+    height: 50px;
 }
 .postnav {
 	transition: .2s ease-in-out;
-	background-color: #e3e3e6;
-	border: solid 1px #bbbbc5;
-	border-radius: 6px;
-	color: darkslategray;
-	padding: 8px 6px 8px 6px;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: darkslategray;
 	text-decoration: none;
+	padding: 12px 10px 0px 10px;
+    height: 100%;
 }
 .postnav:hover {
 	transition: .2s ease-in-out;
-	background-color: slategray;
-	border: solid 1px transparent;
-	color: whitesmoke;
+	background-color: #bbbbc5;
+	color: #313132;
+}
+#navback {
+    float: left;
+}
+#navforward {
+    float: right;
 }
 #previous {
 	transition: .2s ease-in-out;
@@ -205,25 +227,15 @@ body#contact .navigation#contact {
 	transform: scaleX(-1);
 	filter: FlipH;
 	-ms-filter: "FlipH";
-	height: 28px;
+    height: 28px;
 	vertical-align: -40%;
-	padding-left: 8px;
-}
-.postnav:hover #previous {
-	transition: .2s ease-in-out;
-	filter: invert(100%);
-	-webkit-filter: invert(100%);
+	padding-left: 4px;
 }
 #next {
 	transition: .2s ease-in-out;
-	height: 28px;
+    height: 28px;
 	vertical-align: -40%;
-	padding-left: 8px;
-}
-.postnav:hover #next {
-	transition: .2s ease-in-out;
-	filter: invert(100%);
-	-webkit-filter: invert(100%);
+	padding-left: 4px;
 }
 /* Media Query Differences */
 @media screen and (max-width: 568px) {

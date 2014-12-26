@@ -1,6 +1,5 @@
-auto: true
 markdown: rdiscount
-pygments: true
+highlighter: true
 permalink: /blog/:title
 paginate: 10
 paginate_path: "blog/page:num/"
