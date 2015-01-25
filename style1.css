@@ -355,16 +355,19 @@ body#contact .navigation#contact {
         -moz-box-sizing:border-box;
         -webkit-box-sizing:border-box;
     }
-
     p>img {
         width: 100%;
     }
     .content-wrap {
         text-align: left;
-        width: 100%;
-        margin: 20px auto;
+        width: 98%;
     }
     #featuredproject {
         width: 90%;
+    }
+}
+@media screen and (max-width: 568px) and (orientation: landscape) {
+    p {
+        font-size: 0.7em;
     }
 }
