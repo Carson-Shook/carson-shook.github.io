@@ -202,6 +202,7 @@ body#contact .navigation#contact {
 	color: darkslategray;
 	padding: 0px 10px 0px 10px;
 	height: 100%;
+    box-sizing: border-box;
 }
 #title:hover {
 	transition: .2s ease-in-out;
@@ -344,31 +345,16 @@ body#contact .navigation#contact {
     #title {
         width: 100%;
         height: auto;
-        display: inline-block;
-        vertical-align: middle;
-        text-align: center;
-        font-family: "Raleway", sans-serif;
         font-weight: 300;
         font-size: 2em;
         text-decoration: none;
         padding: none;
         margin: none;
-        color: darkslategray;
     }
     .navigation {
         height: auto;
-        display: inline-block;
-        vertical-align: middle;
         -moz-box-sizing:border-box;
         -webkit-box-sizing:border-box;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 1.2em;
-        color: darkslategray;
-        text-decoration: none;
-        border-top: 4px solid transparent;
-        padding: 8px 10px 0px 10px;
-        height: 100%;
     }
 
     p>img {
@@ -376,10 +362,10 @@ body#contact .navigation#contact {
     }
     .content-wrap {
         text-align: left;
-        width: 96%;
+        width: 100%;
         margin: 20px auto;
     }
     #featuredproject {
-        width: 100%;
+        width: 90%;
     }
 }
