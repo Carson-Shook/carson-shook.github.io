@@ -10,19 +10,32 @@
     </head>
     <body id="index">
 		{% include navigation.html %} 
-		<article>
+		<main>
 			<div class="content-wrap">
-				<h1>Welcome</h1>
-				<h2>Please enjoy your stay</h2>
-				<p>This is the current project that I'm working on, and others will appear as I work on them.<p>
-				
-				<div class="centering">
-                    <a href="http://github.com/Carson-Shook/cursed-breakout">
+                <div class="centering">
+                    <!--<h1>Projects</h1>-->
+                    <br><br>
+                    <a href="http://github.com/Carson-Shook/cursed-breakout" class="nolinkstyle">
                         <img src="img/cursedbreakoutblock.png" id="featuredproject" alt="cursed breakout" title="cursed breakout"/>
                     </a>
+                    <br><br><br>
                 </div>
-			</div>
-        </article>
-		{% include footer.html %}
+            </div>
+            <div id="latestpost">
+                <div class="content-wrap">
+                    <div class="centering">
+                        <h1>Latest Blog Post</h1>
+                    </div>
+                    {% for post in site.posts limit:1 %}
+                    <a href="{{ post.url }}" class="nolinkstyle"><div class="postblock">
+                        <h2 id="latesttitle">{{ post.title }}</h2>
+                        <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+                        {{ post.content | truncatewords: 50 }}
+                    </div></a>
+                    {% endfor %}
+                </div>
+            </div>
+        </main>
+        {% include footer.html %}
     </body>
 </html>

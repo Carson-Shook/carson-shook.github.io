@@ -33,12 +33,16 @@ header {
 	width: 100%;
 	/*background-color: slategray;*/
 }
-article {
-	background-color: whitesmoke;
-	padding: 0px;
-	margin-top: 0px;
+main {
+    background-color: whitesmoke;
+    padding: 0px;
+    margin-top: 0px;
     display: inline-block;
     width: 100%;
+}
+article {
+	padding: 0px;
+	margin-top: 3em;
 }
 footer {
 	font-family: "Roboto", sans-serif;
@@ -63,7 +67,8 @@ h1 {
 	font-family: "Raleway", sans-serif;
 	font-weight: 300;
 	font-size: 3em;
-	margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0em;
 }
 h2 {
 	font-family: "Raleway", sans-serif;
@@ -71,14 +76,14 @@ h2 {
 	font-size: 1.6em;
 	color: darkslategray;
 	margin-top: 0px;
-	margin-bottom: 40px;
+	margin-bottom: 1.4em;
 }
 h3 {
 	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	font-size: 1.4em;
-	margin-top: 20px;
-	margin-bottom: 0px;
+    margin: 0;
+    margin-top: 0.8em;
 	color: #313132;
 }
 p {
@@ -87,6 +92,7 @@ p {
 	font-size: 1.1em;
 	line-height: 150%;
 	margin-top: 0px;
+    margin-bottom: 1em;
 }
 ul {
     font-family: "Roboto", sans-serif;
@@ -105,15 +111,24 @@ code {
 	color: darkslategray;
     display: inline-block;
 }
-pre>code {
-    margin: 0 2em;
+pre {
+    width: auto;
+    max-width: 90%;
+    overflow: auto;
+    background-color: #e3e3e6;
+    border-radius: 4px;
+    margin: 2em 2em;
     padding: 1em 1.5em;
     border: 1px solid #c3c3c6;
-    overflow: auto;
-    border-radius: 4px;
+}
+pre>code {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0px;
     font-size: 1.1em;
     color: darkslategray;
-    background-color: #e3e3e6;
+    background-color: transparent;
 
 }
 .nolinkstyle {
@@ -207,30 +222,51 @@ body#contact .navigation#contact {
 	vertical-align: middle;
 }
 #featuredproject {
+    transition: 0.1s ease-in-out;
     width: 70%;
     border-radius: 10px;
 }
 #featuredproject:hover {
     opacity: 0.9;
 }
-
+#latestpost {
+    background-color: #e3e3e6;
+    padding: 1em 0;
+}
+#latesttitle {
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0.8em;
+}
+/* Blog Posts */
 .postblock {
-    transition: .1s ease-in-out;
+    transition: 0.1s ease-in-out;
     padding: 0.25em 2em;
     margin: 1em 0;
-    border-left: 2px solid transparent;
+    border-radius: 6px;
 }
 .postblock:hover {
-    transition: .1s ease-in-out;
+    transition: 0.1s ease-in-out;
     padding: 0.25em 2em;
     margin: 1em 0;
-    border-radius: 0px;
-    border-left: 4px solid slategray;
-    /*background: #fff;*/
-    /*box-shadow: 0 1px 4px #cecece;*/
+    transform: scale(1.01,1.01);
+    -ms-transform: scale(1.01,1.01);
+    -moz-transform: scale(1.01,1.01);
+    -webkit-transform: scale(1.01,1.01);
+    background-color: white;
+}
+.postblock:active {
+    transition: 0.05s ease-in-out;
+    padding: 0.25em 2em;
+    margin: 1em 0;
+    transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
 }
 .date {
     color: slategray;
+    margin-bottom: 1em;
 }
 /* Pagination */
 .pagination {
@@ -302,13 +338,46 @@ body#contact .navigation#contact {
 }
 /* Media Query Differences */
 @media screen and (max-width: 568px) {
+    nav {
+        height: 80px;
+    }
+    #title {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: 2em;
+        text-decoration: none;
+        color: darkslategray;
+    }
+    .navigation {
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 1.2em;
+        color: darkslategray;
+        text-decoration: none;
+        border-top: 4px solid transparent;
+        padding: 8px 10px 0px 10px;
+        height: 100%;
+    }
+
+    p>img {
+        width: 100%;
+    }
     .content-wrap {
         text-align: left;
-        width: 100%;
+        width: 96%;
         margin: 20px auto;
     }
     #featuredproject {
         width: 100%;
-        border-radius: 0px;
     }
 }

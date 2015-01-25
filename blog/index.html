@@ -7,7 +7,7 @@ title: Carson Shook - Blog
 {% for post in paginator.posts %}
 <a href="{{ post.url }}" class="nolinkstyle"><div class="postblock">
 <h3>{{ post.title }}</h3>
-<span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+<div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
 {{ post.content | truncatewords: 50 }}
 </div></a>
 {% endfor %}

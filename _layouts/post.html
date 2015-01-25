@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-
+<article>
 {% include post_header.html %}
 {{ content }}
+</article>
 <div class="pagination">
 	{% if page.previous.url %}
     <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}" class="postnav" id="navback"><img src="http://carson-shook.github.io/img/arrow.png" id="previous" />
