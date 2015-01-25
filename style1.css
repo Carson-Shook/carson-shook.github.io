@@ -352,6 +352,7 @@ body#contact .navigation#contact {
         font-size: 2em;
         text-decoration: none;
         padding: none;
+        margin: none;
         color: darkslategray;
     }
     .navigation {
