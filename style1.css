@@ -351,6 +351,7 @@ body#contact .navigation#contact {
         font-weight: 300;
         font-size: 2em;
         text-decoration: none;
+        padding: none;
         color: darkslategray;
     }
     .navigation {

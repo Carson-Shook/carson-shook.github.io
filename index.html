@@ -13,7 +13,6 @@
 		<main>
 			<div class="content-wrap">
                 <div class="centering">
-                    <!--<h1>Projects</h1>-->
                     <br><br>
                     <a href="http://github.com/Carson-Shook/cursed-breakout" class="nolinkstyle">
                         <img src="img/cursedbreakoutblock.png" id="featuredproject" alt="cursed breakout" title="cursed breakout"/>
@@ -27,7 +26,7 @@
                         <h1>Latest Blog Post</h1>
                     </div>
                     {% for post in site.posts limit:1 %}
-                    <a href="{{ post.url }}" class="nolinkstyle"><div class="postblock">
+                    <a href="{{ post.url }}" class="nolinkstyle"><div onclick="" class="postblock">
                         <h2 id="latesttitle">{{ post.title }}</h2>
                         <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
                         {{ post.content | truncatewords: 50 }}
