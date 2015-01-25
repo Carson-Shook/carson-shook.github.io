@@ -110,7 +110,6 @@ code {
 	border-radius: 4px;
 	color: darkslategray;
     display: inline-block;
-    font-size: 1.1em;
 }
 pre {
     width: auto;
@@ -370,8 +369,5 @@ body#contact .navigation#contact {
 @media screen and (max-width: 568px) and (orientation: landscape) {
     p {
         font-size: 0.7em;
-    }
-    code {
-        font-size: 1.1em;
     }
 }
