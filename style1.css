@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,700italic,700,300italic);
+
 html {
-	/*background-color: #313132;*/
 	background-image: url("img/dark_wall.png"); /* Background pattern from subtlepatterns.com */
 }
 body {
@@ -349,11 +349,6 @@ body#contact .navigation#contact {
         font-size: 2em;
         text-decoration: none;
         text-align: center;
-    }
-    .navigation {
-        height: auto;
-        -moz-box-sizing:border-box;
-        -webkit-box-sizing:border-box;
     }
     p>img {
         width: 100%;
