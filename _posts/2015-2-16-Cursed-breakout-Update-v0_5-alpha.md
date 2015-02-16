@@ -7,7 +7,7 @@ Well, it's been a little while since I've released an update for this game, but 
 
 If you want to download, just click the following link, or visit the project directly on GitHub. To build, just type `make` in the terminal, and run the game with `./breakout`
 
-### [Download cursed-breakout v0.5a](https://github.com/Carson-Shook/cursed-breakout/archive/master.zip)
+[Download cursed-breakout v0.5a](https://github.com/Carson-Shook/cursed-breakout/archive/master.zip)
 
 The next update should include at the very least a single *repeating* level, or more hopefully support for a series of custom designed levels stored in a text file in the same directory. You should also be able to look forward to the ability for the ball to change X and Y velocity when it hits the paddle. It will naturally come with minor adjustments to the design of the score board, and possibly some preparations for a power-up system (here's hoping).
 
