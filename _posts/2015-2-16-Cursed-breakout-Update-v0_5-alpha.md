@@ -11,7 +11,7 @@ If you want to download, just click the following link, or visit the project dir
 
 The next update should include at the very least a single *repeating* level, or more hopefully support for a series of custom designed levels stored in a text file in the same directory. You should also be able to look forward to the ability for the ball to change X and Y velocity when it hits the paddle. It will naturally come with minor adjustments to the design of the score board, and possibly some preparations for a power-up system (here's hoping).
 
-That's all for now. The changelog from this update is below, and if you want the complete changelog, please visit the project [directly on GitHub](github.com/Carson-Shook/cursed-breakout).
+That's all for now. The changelog from this update is below, and if you want the complete changelog, please visit the project [directly on GitHub](http://github.com/Carson-Shook/cursed-breakout).
 
 ### Changelog
 - Added ball reset, life count, and **Game Over** screen
