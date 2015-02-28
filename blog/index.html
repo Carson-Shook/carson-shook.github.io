@@ -5,13 +5,12 @@ title: Carson Shook - Blog
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-<a href="{{ post.url }}" class="nolinkstyle"><div onclick="" class="postblock">
+<a href="{{ post.url }}" class="nolinkstyle"><div class="postblock">
 <h3>{{ post.title }}</h3>
 <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
 {{ post.content | truncatewords: 50 }}
 </div></a>
 {% endfor %}
-<br>
 <br>
 <!-- Pagination links -->
 <div class="pagination">

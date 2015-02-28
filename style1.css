@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,700italic,700,300italic);
 
 html {
-	background-image: url("img/dark_wall.png"); /* Background pattern from subtlepatterns.com */
+    background-color: whitesmoke;
 }
 body {
     text-align: center;
@@ -14,6 +14,7 @@ body {
     margin: 0;
 }
 nav {
+    position: fixed;
 	background-color: #e3e3e6;
 	display: block;
 	width: 100%;
@@ -23,6 +24,7 @@ nav {
 	-webkit-box-sizing:border-box;
 	top: 0px;
 	text-align: left;
+    z-index: 99;
 }
 header {
 	display: inline-block;
@@ -36,26 +38,28 @@ header {
 main {
     background-color: whitesmoke;
     padding: 0px;
-    margin-top: 0px;
+    margin-top: 5em;
     display: inline-block;
     width: 100%;
 }
 article {
 	padding: 0px;
-	margin-top: 3em;
 }
 footer {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 1.0em;
-	color: white;
-	vertical-align: middle;
-	margin-top: 40px;
-	margin-bottom: 40px;
-    opacity: 0.4;
-	text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    color: #99999c;
+	margin-top: 10px;
+    margin-bottom: 10px;
 }
-a {}
+a {
+    color: #6666aa;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 hr {
     height: 1px;
     padding: 0px;
@@ -89,7 +93,7 @@ h3 {
 p {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	line-height: 150%;
 	margin-top: 0px;
     margin-bottom: 1em;
@@ -97,7 +101,7 @@ p {
 ul {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 150%;
 }
 li {
@@ -135,6 +139,9 @@ pre>code {
     text-decoration: none;
     color: inherit;
 }
+.nolinkstyle:hover {
+    text-decoration: none;
+}
 .highlight {
     margin: 0 2em;
     padding: 1em 1.5em;
@@ -148,10 +155,23 @@ pre>code {
 .content-wrap {
 	text-align: left;
 	width: 70%;
-	margin: 20px auto;
+	margin: auto;
+    margin-bottom: 0;
+}
+.leftalign {
+    text-align: left;
+}
+.rightalign {
+    text-align: right;
 }
 .centering {
     text-align: center;
+}
+.leftfloat {
+    float: left;
+}
+.rightfloat {
+    float: right;
 }
 .navigation {
 	transition: .2s ease-in-out;
@@ -179,17 +199,8 @@ pre>code {
 body#blog .navigation#blog {
 	border-top: 4px solid slategray;
 }
-body#contact .navigation#contact {
-	border-top: 4px solid slategray;
-}
-#topnav {
-}
-#github {
-	float:right;
-}
-#githubfooter {
-	height: 30px;
-	vertical-align: middle;
+body#about .navigation#about {
+    border-top: 4px solid slategray;
 }
 #title {
 	transition: .2s ease-in-out;
@@ -209,19 +220,6 @@ body#contact .navigation#contact {
 	background-color: #bbbbc5;
 	color: #313132;
 }
-#productquote {
-	display: inline;
-	font-family: "Raleway", sans-serif;
-	font-weight: 900;
-	font-size: 2.5em;
-	color: white;
-	vertical-align: middle;
-}
-#productimage {
-	display: inline;
-	margin: 40px;
-	vertical-align: middle;
-}
 #featuredproject {
     transition: 0.1s ease-in-out;
     width: 70%;
@@ -239,12 +237,19 @@ body#contact .navigation#contact {
     margin-bottom: 0;
     margin-top: 0.8em;
 }
+#aboutphoto {
+    height: 250px;
+    width:250px;
+    margin-left: 20px;
+    float: right;
+}
 /* Blog Posts */
 .postblock {
     transition: 0.1s ease-in-out;
     padding: 0.25em 2em;
     margin: 1em 0;
     border-radius: 6px;
+    text-decoration: none;
 }
 .postblock:hover {
     transition: 0.1s ease-in-out;
@@ -255,6 +260,7 @@ body#contact .navigation#contact {
     -moz-transform: scale(1.01,1.01);
     -webkit-transform: scale(1.01,1.01);
     background-color: white;
+    text-decoration: none;
 }
 .postblock:active {
     transition: 0.05s ease-in-out;
@@ -264,6 +270,7 @@ body#contact .navigation#contact {
     -ms-transform: scale(1,1);
     -moz-transform: scale(1,1);
     -webkit-transform: scale(1,1);
+    text-decoration: none;
 }
 .date {
     color: slategray;
@@ -290,12 +297,12 @@ body#contact .navigation#contact {
     color: darkslategray;
 	text-decoration: none;
 	padding: 12px 10px 0px 10px;
-    height: 100%;
 }
 .postnav:hover {
 	transition: .2s ease-in-out;
 	background-color: #bbbbc5;
 	color: #313132;
+    text-decoration: none;
 }
 .postnavinactive {
     display: inline-block;
@@ -338,9 +345,12 @@ body#contact .navigation#contact {
 	padding-left: 4px;
 }
 /* Media Query Differences */
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 568px),
+screen and (max-width: 1136px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
     nav {
         height: 80px;
+        position: absolute;
     }
     #title {
         width: 100%;
@@ -360,8 +370,30 @@ body#contact .navigation#contact {
     #featuredproject {
         width: 90%;
     }
+    #aboutphoto {
+        height: 100px;
+        width:100px;
+        margin-left: 10px;
+        float: right;
+    }
+    .postnav {
+        height: 100%;
+        font-size: 0;
+    }
+    footer {
+        float: center !important;
+        text-align: center !important;
+    }
+    p {
+        font-size:1.0em;
+    }
+    .rightfloat {
+        float:left;
+    }
 }
-@media screen and (max-width: 568px) and (orientation: landscape) {
+@media screen and (max-width: 568px) and (orientation: landscape),
+screen and (max-width: 1136px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 1136px) and (orientation: landscape) and (min-device-pixel-ratio: 2) {
     p {
         font-size: 0.7em;
     }

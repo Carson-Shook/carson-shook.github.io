@@ -2,6 +2,7 @@
 layout: post
 title: Cursed-breakout Update v0.5 alpha
 published: true
+comments: true
 ---
 Well, it's been a little while since I've released an update for this game, but I assure you that I was working hard (almost) the entire time. This update actually makes it a real game with a fail state, a score, and assorted nice things. I'm not quite ready to move to beta status yet, since it's fixed to a single level with no pausing and no speed increase or way to keep going afterward.
 

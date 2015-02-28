@@ -2,6 +2,7 @@
 layout: post
 title: Using curses in Games Programming
 published: true
+comments: true
 ---
 
 Around 1980, a library called *curses* was created at Berkeley for a BSD operating system. It was designed for the purpose of making it easier to create visual programs in a terminal environment. By '82, a freeware clone called *pcurses* was created by Pavel Curtis. By 1991 *New curses* (better known as *ncurses* is released, supplanting the popular *pcurses* library. It is still maintained to this day by Thomas E. Dickey, though you may know him for another popular program which he maintains: *xterm.*

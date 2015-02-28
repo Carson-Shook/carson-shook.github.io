@@ -2,6 +2,7 @@
 layout: post
 title: Building a Website From Scratch with Jekyll
 published: true
+comments: true
 ---
 
 Well, it has been an interesting couple of weeks.
