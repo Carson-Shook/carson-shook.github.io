@@ -297,6 +297,7 @@ body#about .navigation#about {
     color: darkslategray;
 	text-decoration: none;
 	padding: 12px 10px 0px 10px;
+    height: 100%;
 }
 .postnav:hover {
 	transition: .2s ease-in-out;
