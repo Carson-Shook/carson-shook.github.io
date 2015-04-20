@@ -1,12 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,600);
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,700italic,700,300italic);
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,700italic,700,300italic);*/
 
 html {
     background-color: whitesmoke;
 }
 body {
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    font-family: "Helvetica Neue","Arial","Liberationsans","Freesans",sans-serif;
 	font-size: 1em;
     font-weight: 400;
     padding: 0;
@@ -46,8 +46,7 @@ article {
 	padding: 0px;
 }
 footer {
-	font-family: "Roboto", sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 1.0em;
     color: #99999c;
 	margin-top: 10px;
@@ -91,16 +90,14 @@ h3 {
 	color: #313132;
 }
 p {
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.2em;
 	line-height: 150%;
 	margin-top: 0px;
     margin-bottom: 1em;
 }
 ul {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.2em;
     line-height: 150%;
 }
@@ -180,7 +177,6 @@ pre>code {
 	box-sizing: border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-size: 1.2em;
 	color: darkslategray;
@@ -292,7 +288,6 @@ body#about .navigation#about {
     box-sizing: border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: darkslategray;
 	text-decoration: none;
@@ -311,7 +306,6 @@ body#about .navigation#about {
     box-sizing: border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: darkslategray;
     text-decoration: none;
