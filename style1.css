@@ -95,11 +95,15 @@ p {
 	line-height: 150%;
 	margin-top: 0px;
     margin-bottom: 1em;
+    color:#333;
+    -webkit-font-smoothing: antialiased;
 }
 ul {
     font-weight: 400;
     font-size: 1.2em;
     line-height: 150%;
+    color:#333;
+    -webkit-font-smoothing: antialiased;
 }
 li {
     margin-bottom: 15px;
@@ -111,6 +115,8 @@ code {
 	border-radius: 4px;
 	color: darkslategray;
     display: inline-block;
+    line-height: 140%;
+    font-weight: 600;
 }
 pre {
     width: auto;
@@ -346,6 +352,9 @@ screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
     nav {
         height: 80px;
         position: absolute;
+    }
+    .navigation {
+        height: 55%;
     }
     #title {
         width: 100%;
