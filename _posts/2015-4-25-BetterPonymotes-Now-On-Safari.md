@@ -87,7 +87,7 @@ Once the backend was handled properly, it was time to add the necessary hooks to
     };
 
 I set up a similar thing in the `options.js` file, and the core of the add-on was actually working! Or so I thought...
-The only thing that I had overlooked was Safari's inability to send key:value pairs as an object. As a result, the preferences were not being set or retrieved on the preference page. After a few hours of searching, I concluded that the only thing to do was to use JSON to stringify the data, but I had no idea how to do that. Fortunately, way back in the day, someone tossed up the source code for BPM [in it's entirety on GitHub](https://github.com/CoRD-Dev/bpm-ancient) (speaking of which, Typhos, shouldn't you have the current source code available somewhere since it's licensed under the GPL?), and there I found that Chrome had this same problem, and thus required the same solution. So with that knowledge, I was finally able to retrieve and store preferences from Safari's localStorage.
+The only thing that I had overlooked was Safari's inability to send key:value pairs as an object. As a result, the preferences were not being set or retrieved on the preference page. After a few hours of searching, I concluded that the only thing to do was to use JSON to stringify the data, but I had no idea how to do that. Fortunately, way back in the day, someone tossed up the source code for BPM [in it's entirety on GitHub](https://github.com/CoRD-Dev/bpm-ancient), and there I found that Chrome had this same problem, and thus required the same solution. So with that knowledge, I was finally able to retrieve and store preferences from Safari's localStorage.
 
 Finally, I was done. Now all I have to do is maintain it.
 
