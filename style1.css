@@ -220,6 +220,12 @@ pre>code {
 	color: #313132;
 	text-decoration: none;
 }
+.hiddenCloseButtonMobile {
+    display: none;
+}
+.hiddenCloseButtonMobile:hover {
+    visibility: hidden;
+}
 .dropDownContainer>.dropDownMenu {
     transition: .2s ease-in-out;
     display: none;
@@ -231,6 +237,7 @@ pre>code {
     background-color: #bbbbc5;
     margin-left: -113px;
     margin-top: 50px;
+    
 }
 .dropDownContainer:hover>.navigation {
     background-color: #bbbbc5;
@@ -253,6 +260,9 @@ div.dropDownItem>a:hover {
 }
 body#blog .navigation#blog {
 	border-top: 4px solid slategray;
+}
+body#projects .navigation#projects {
+    border-top: 4px solid slategray;
 }
 body#about .navigation#about {
     border-top: 4px solid slategray;
@@ -277,8 +287,10 @@ body#about .navigation#about {
 }
 #featuredproject {
     transition: 0.1s ease-in-out;
-    width: 70%;
+    width: 48%;
     border-radius: 10px;
+    max-height: 500px;
+    max-width: 800px;
 }
 #featuredproject:hover {
     opacity: 0.9;
@@ -403,11 +415,31 @@ body#about .navigation#about {
 screen and (max-width: 1136px) and (-webkit-min-device-pixel-ratio: 2),
 screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
     nav {
-        height: 80px;
+        height: 82px;
         position: absolute;
     }
     .navigation {
         height: 55%;
+    }
+    .dropDownContainer:hover>.dropDownMenu {
+        margin-left: -111px;
+        margin-top: 44px;
+    }
+    .dropDownContainer:hover>.hiddenCloseButtonMobile {
+        display: inline-block;
+        position: absolute;
+        font-size: 35px;
+        background-color: #bbbbc5;
+        padding-left: 43px;
+        padding-right: 43px;
+        text-decoration: none;
+        color: darkslategray;
+    }
+    .hiddenCloseButtonMobile:hover~.dropDownMenu {
+        display: none;
+    }
+    .hiddenCloseButtonMobile:hover~.navigation {
+        background-color: transparent;
     }
     #title {
         width: 100%;
@@ -437,15 +469,16 @@ screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
         height: 100%;
         font-size: 0;
     }
-    footer {
-        float: center !important;
-        text-align: center !important;
+    footer>.content-wrap {
+        font-size: 1.0em;
+        text-align: left;
     }
     p {
         font-size:1.0em;
     }
-    .rightfloat {
-        float:left;
+    footer>.content-wrap>.rightfloat {
+        float: left;
+        text-align: left;
     }
 }
 @media screen and (max-width: 568px) and (orientation: landscape),
@@ -453,5 +486,12 @@ screen and (max-width: 1136px) and (orientation: landscape) and (-webkit-min-dev
 screen and (max-width: 1136px) and (orientation: landscape) and (min-device-pixel-ratio: 2) {
     p {
         font-size: 0.7em;
+    }
+    #featuredproject {
+        width: 48%;
+    }
+    footer {
+        font-size: 0.8em;
+        text-align: left;
     }
 }
