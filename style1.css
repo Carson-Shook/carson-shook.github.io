@@ -199,6 +199,11 @@ pre>code {
 .rightfloat {
     float: right;
 }
+.autoScaleImage {
+    max-height: intrinsic;
+    max-width: intrinsic;
+    width: 100%;
+}
 .navigation {
 	transition: .2s ease-in-out;
 	display: inline-block;
