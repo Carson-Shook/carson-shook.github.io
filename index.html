@@ -33,7 +33,7 @@
                     <a href="{{ post.url }}" class="nolinkstyle"><div class="postblock">
                         <h2 id="latesttitle">{{ post.title }}</h2>
                         <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
-                        {{ post.content | truncatewords: 50 }}
+                        <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
                     </div></a>
                     {% endfor %}
                 </div>
