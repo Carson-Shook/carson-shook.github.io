@@ -478,8 +478,18 @@ screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
         font-size: 1.0em;
         text-align: left;
     }
+    h1 {
+        font-size: 2.1em;
+    }
     p {
         font-size:1.0em;
+    }
+    code {
+        max-width: 95%;
+        overflow: scroll;
+    }
+    pre>code {
+        font-size: 0.6em;
     }
     footer>.content-wrap>.rightfloat {
         float: left;
