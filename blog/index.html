@@ -8,7 +8,10 @@ title: Carson Shook - Blog
 <a href="{{ post.url }}" class="nolinkstyle"><div class="postblock">
 <h3>{{ post.title }}</h3>
 <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
-<p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+{% if post.image %}
+<img src={{ post.image }} class="postimage">
+{% endif %}
+<p>{{ post.content | strip_html | truncatewords: 80 }}</p>
 </div></a>
 {% endfor %}
 <br>

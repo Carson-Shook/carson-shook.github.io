@@ -132,7 +132,7 @@ td {
     background-color: #e3e3e6;
 }
 code {
-    padding: 0 .5em;
+    padding: 0 .5em 0 .5em;
     border: 1px solid #c3c3c6;
     background-color: #e3e3e6;
 	border-radius: 4px;
@@ -159,7 +159,6 @@ pre>code {
     font-size: 1.1em;
     color: darkslategray;
     background-color: transparent;
-
 }
 .nolinkstyle {
     text-decoration: none;
@@ -225,12 +224,6 @@ pre>code {
 	color: #313132;
 	text-decoration: none;
 }
-.hiddenCloseButtonMobile {
-    display: none;
-}
-.hiddenCloseButtonMobile:hover {
-    visibility: hidden;
-}
 .dropDownContainer>.dropDownMenu {
     transition: .2s ease-in-out;
     display: none;
@@ -240,7 +233,7 @@ pre>code {
     display: inline-block;
     position: absolute;
     background-color: #bbbbc5;
-    margin-left: -113px;
+    margin-left: -96px;
     margin-top: 50px;
     
 }
@@ -262,6 +255,7 @@ div.dropDownItem>a {
 }
 div.dropDownItem>a:hover {
     background-color: #aaaab5;
+    color: #313132;
 }
 body#blog .navigation#blog {
 	border-top: 4px solid slategray;
@@ -290,14 +284,14 @@ body#about .navigation#about {
 	background-color: #bbbbc5;
 	color: #313132;
 }
-#featuredproject {
+.featuredproject {
     transition: 0.1s ease-in-out;
     width: 48%;
     border-radius: 10px;
     max-height: 500px;
     max-width: 800px;
 }
-#featuredproject:hover {
+.featuredproject:hover {
     opacity: 0.9;
 }
 #latestpost {
@@ -348,6 +342,18 @@ body#about .navigation#about {
     color: slategray;
     margin-bottom: 1em;
 }
+.postimage {
+    height: 150px;
+    display: inline-block;
+    padding: 5px;
+    padding: 5px 5px 5px 0;
+}
+div.postblock>img.postimage+p {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+}
+
 /* Pagination */
 .pagination {
     box-sizing: border-box;
@@ -440,12 +446,17 @@ screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
         text-decoration: none;
         color: darkslategray;
     }
-    .hiddenCloseButtonMobile:hover~.dropDownMenu {
+    .dropDownContainer>.dropDownMenu {
         display: none;
     }
-    .hiddenCloseButtonMobile:hover~.navigation {
-        background-color: transparent;
+    .dropDownContainer:hover>.dropDownMenu, .dropDownContainer:focus>.dropDownMenu {
+        display: none;
+        position: absolute;
     }
+    .dropDownContainer:hover>.navigation {
+        background-color: #bbbbc5;
+    }
+
     #title {
         width: 100%;
         height: auto;
@@ -461,7 +472,7 @@ screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
         text-align: left;
         width: 98%;
     }
-    #featuredproject {
+    .featuredproject {
         width: 90%;
     }
     #aboutphoto {
@@ -474,6 +485,9 @@ screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
         height: 100%;
         font-size: 0;
     }
+    div.postblock>img.postimage+p {
+        width: 100%;
+    }
     footer>.content-wrap {
         font-size: 1.0em;
         text-align: left;
@@ -484,12 +498,39 @@ screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
     p {
         font-size:1.0em;
     }
+    pre {
+        width: auto;
+        max-width: 100%;
+        overflow: auto;
+        background-color: #e3e3e6;
+        border-radius: 4px;
+        margin: 2em 0em 2em 0em;
+        padding: 1em 0em;
+        border: 1px solid #c3c3c6;
+    }
     code {
+        padding: 0 0.5em 0 .5em;
+        border: 1px solid #c3c3c6;
+        background-color: #e3e3e6;
+        border-radius: 4px;
+        color: darkslategray;
+        display: inline-block;
+        line-height: 140%;
+        font-weight: 600;
         max-width: 95%;
         overflow: scroll;
+        margin-bottom: -5px;
     }
     pre>code {
-        font-size: 0.6em;
+        margin: 0;
+        padding: 0 0.5em 0 0.5em;
+        border: none;
+        border-radius: 0px;
+        color: darkslategray;
+        background-color: transparent;
+        max-width: 95%;
+        font-size: 0.9em;
+        overflow: auto;
     }
     footer>.content-wrap>.rightfloat {
         float: left;

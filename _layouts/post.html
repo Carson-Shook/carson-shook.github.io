@@ -3,6 +3,13 @@ layout: default
 ---
 <article>
 {% include post_header.html %}
+{% if page.image %}
+<div class="centering">
+<img src="../{{ page.image }}" class="autoScaleImage"/>
+<br>
+<br>
+</div>
+{% endif %}
 {{ content }}
 </article>
 <div class="comments">

@@ -15,11 +15,11 @@
                 <div class="centering">
                     <br><br>
                     <a href="/BetterPonymotes-for-Safari" class="nolinkstyle">
-                        <img src="img/betterponymotesblock.jpg" id="featuredproject" alt="BetterPonymotes now for Safari"/>
+                        <img src="img/betterponymotesblock.jpg" class="featuredproject" alt="BetterPonymotes now for Safari"/>
                     </a>
                     
-                    <a href="http://github.com/Carson-Shook/cursed-breakout" class="nolinkstyle">
-                        <img src="img/cursedbreakoutblock.jpg" id="featuredproject" alt="cursed breakout"/>
+                    <a href="http://github.com/Carson-Shook/cursed-breakout/releases" class="nolinkstyle">
+                        <img src="img/cursedbreakoutblock.jpg" class="featuredproject" alt="cursed breakout"/>
                     </a>
                     <br><br><br><br><br>
                 </div>
@@ -33,7 +33,10 @@
                     <a href="{{ post.url }}" class="nolinkstyle"><div class="postblock">
                         <h2 id="latesttitle">{{ post.title }}</h2>
                         <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
-                        <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+                        {% if post.image %}
+                        <img src={{ post.image }} class="postimage">
+                        {% endif %}
+                        <p>{{ post.content | strip_html | truncatewords: 80 }}</p>
                     </div></a>
                     {% endfor %}
                 </div>
