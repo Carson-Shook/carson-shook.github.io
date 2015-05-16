@@ -184,6 +184,13 @@ pre>code {
     background-color: #99999c;
     border-bottom: solid 3px #99999c;
 }
+.buttonicon {
+    background-image: url("/img/arrow-down.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 6px;
+    padding-left: 40px;
+}
 .highlight {
     margin: 0 2em;
     padding: 1em 1.5em;
