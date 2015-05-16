@@ -168,10 +168,10 @@ pre>code {
     text-decoration: none;
 }
 .button {
-    background-color: #bbbbc5;
+    background-color: #99999c;
     color: white;
     padding: 10px;
-    border-bottom: solid 3px #9b9ba5;
+    border-bottom: solid 3px #66666c;
     border-radius: 5px;
     display: inline-block;
 }
@@ -179,7 +179,7 @@ pre>code {
     background-color: #aaaab5;
 }
 .button:active {
-    border-bottom: solid 3px #bbbbc5;
+    border-bottom: solid 3px #99999c;
 }
 .highlight {
     margin: 0 2em;
