@@ -175,6 +175,7 @@ pre>code {
     border-bottom: solid 3px #66666c;
     border-radius: 5px;
     display: inline-block;
+    margin: 10px;
 }
 .button:hover {
     background-color: #aaaab5;
