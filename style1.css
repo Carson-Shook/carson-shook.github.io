@@ -167,6 +167,13 @@ pre>code {
 .nolinkstyle:hover {
     text-decoration: none;
 }
+.button {
+    background-color: #99999c;
+    color: white;
+    padding: 10px;
+    border-bottom: solid 3px #66666c;
+    border-radius: 5px;
+}
 .highlight {
     margin: 0 2em;
     padding: 1em 1.5em;
