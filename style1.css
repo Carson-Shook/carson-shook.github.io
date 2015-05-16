@@ -179,6 +179,7 @@ pre>code {
     background-color: #aaaab5;
 }
 .button:active {
+    background-color: #99999c;
     border-bottom: solid 3px #99999c;
 }
 .highlight {
