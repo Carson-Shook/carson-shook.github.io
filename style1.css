@@ -184,6 +184,17 @@ pre>code {
     background-color: #99999c;
     border-bottom: solid 3px #99999c;
 }
+.buttonicon {
+    background-image: url("/img/arrow");
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: 6px;
+}
 .highlight {
     margin: 0 2em;
     padding: 1em 1.5em;
