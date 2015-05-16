@@ -175,9 +175,11 @@ pre>code {
     border-radius: 5px;
     display: inline-block;
 }
+.button:hover {
+    background-color: #aaaab5;
+}
 .button:active {
-    border-top: solid 3px #99999c;
-    border-bottom: none 0px;
+    border-bottom: solid 3px #99999c;
 }
 .highlight {
     margin: 0 2em;
