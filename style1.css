@@ -186,9 +186,9 @@ pre>code {
 }
 .buttonicon {
     background-image: url("/img/arrow-down.png");
-    background-size: 20px;
+    background-size: 24px;
     background-repeat: no-repeat;
-    background-position: 6px;
+    background-position: 9px 11px;
     padding-left: 40px;
 }
 .highlight {
