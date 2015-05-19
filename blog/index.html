@@ -5,7 +5,12 @@ title: Carson Shook - Blog
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-<a href="{{ post.url }}" class="nolinkstyle"><div class="postblock">
+<a href="{{ post.url }}" class="nolinkstyle">
+{% if post.image %}
+<div class="postblock imagepost">
+{% else %}
+<div class="postblock">
+{% endif %}
 <h3>{{ post.title }}</h3>
 <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
 {% if post.image %}
@@ -17,15 +22,15 @@ title: Carson Shook - Blog
 <br>
 <!-- Pagination links -->
 <div class="pagination">
-	{% if paginator.previous_page %}
-	<a href="{{ paginator.previous_page_path }}" class="postnav" id="navback"><img src="/img/arrow.png" id="previous" />Newer</a>
-	{% else %}
-	<span class="postnavinactive" id="navback"><img src="/img/arrow.png" id="previous" />Newer</span>
-	{% endif %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="postnav" id="navback"><img src="/img/arrow.png" id="previous" />Older</a>
+    {% else %}
+    <span class="postnavinactive" id="navback"><img src="/img/arrow.png" id="previous" />Older</span>
+    {% endif %}
 	<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-	{% if paginator.next_page %}
-	<a href="{{ paginator.next_page_path }}" class="postnav" id="navforward">Older<img src="/img/arrow.png" id="next" /></a>
+	{% if paginator.previous_page %}
+	<a href="{{ paginator.previous_page_path }}" class="postnav" id="navforward">Newer<img src="/img/arrow.png" id="next" /></a>
 	{% else %}
-	<span class="postnavinactive" id="navforward">Older<img src="/img/arrow.png" id="next" /></span>
+	<span class="postnavinactive" id="navforward">Newer<img src="/img/arrow.png" id="next" /></span>
 	{% endif %}
 </div>

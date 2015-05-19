@@ -30,7 +30,12 @@
                         <h1>Latest Blog Post</h1>
                     </div>
                     {% for post in site.posts limit:1 %}
-                    <a href="{{ post.url }}" class="nolinkstyle"><div class="postblock">
+                    <a href="{{ post.url }}" class="nolinkstyle">
+                        {% if post.image %}
+                        <div class="postblock imagepost">
+                        {% else %}
+                        <div class="postblock">
+                        {% endif %}
                         <h2 id="latesttitle">{{ post.title }}</h2>
                         <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
                         {% if post.image %}

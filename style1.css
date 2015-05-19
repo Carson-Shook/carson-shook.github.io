@@ -13,20 +13,6 @@ body {
     border: 0;
     margin: 0;
 }
-nav {
-    position: fixed;
-	background-color: #e3e3e6;
-	display: block;
-	width: 100%;
-	height: 50px;
-	box-sizing: border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	top: 0px;
-	text-align: left;
-    z-index: 99;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
 header {
 	display: inline-block;
 	font-family: "Raleway", sans-serif;
@@ -227,44 +213,91 @@ pre>code {
     max-width: intrinsic;
     width: 100%;
 }
+nav {
+    position: fixed;
+    background-color: #e3e3e6;
+    display: block;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    top: 0px;
+    text-align: left;
+    z-index: 99;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+nav ul {
+    list-style: none;
+    position: relative;
+    font-size: 1em;
+    line-height: initial;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+nav li {
+    display: inline-block;
+    float: left;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+nav li>ul {
+    position: absolute;
+    visibility: hidden;
+    display: list-item;
+}
+nav li>ul>li {
+    display: list-item;
+    float: none;
+}
+nav ul>li:hover>ul, ul>li:hover .dropdownnode {
+    visibility: visible;
+    background-color: #bbbbc5;
+}
 .navigation {
-	transition: .2s ease-in-out;
-	display: inline-block;
-	vertical-align: top;
-	box-sizing: border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	font-weight: 700;
-	font-size: 1.2em;
-	color: darkslategray;
-	text-decoration: none;
-	border-top: 4px solid transparent;
-	padding: 8px 10px 0px 10px;
-	height: 100%;
-}
-.navigation:hover {
-	transition: .2s ease-in-out;
-	background-color: #bbbbc5;
-	color: #313132;
-	text-decoration: none;
-}
-.dropDownContainer>.dropDownMenu {
-    transition: .2s ease-in-out;
-    display: none;
-}
-.dropDownContainer:hover>.dropDownMenu, .dropDownContainer:focus>.dropDownMenu {
     transition: .2s ease-in-out;
     display: inline-block;
-    position: absolute;
-    background-color: #bbbbc5;
-    margin-left: -96px;
-    margin-top: 50px;
-    
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: darkslategray;
+    text-decoration: none;
+    border-top: 4px solid transparent;
+    padding: 8px 10px 0px 10px;
+    height: 100%;
+    list-style: none;
 }
-.dropDownContainer:hover>.navigation {
+.navigation:hover {
+    transition: .2s ease-in-out;
     background-color: #bbbbc5;
+    color: #313132;
+    text-decoration: none;
 }
-div.dropDownItem>a {
+#title {
+    transition: .2s ease-in-out;
+    vertical-align: middle;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 2.5em;
+    text-decoration: none;
+    color: darkslategray;
+    padding: 2px 10px 0px 10px;
+    border: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+#title:hover {
+    transition: .2s ease-in-out;
+    background-color: #bbbbc5;
+    color: #313132;
+}
+.dropdownitem {
+    transition: 0s ease-in-out;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 12px;
@@ -276,8 +309,10 @@ div.dropDownItem>a {
     color: darkslategray;
     text-decoration: none;
     box-sizing: border-box;
+    background-color: #bbbbc5;
 }
-div.dropDownItem>a:hover {
+.dropdownitem:hover {
+    transition: 0s ease-in-out;
     background-color: #aaaab5;
     color: #313132;
 }
@@ -289,24 +324,6 @@ body#projects .navigation#projects {
 }
 body#about .navigation#about {
     border-top: 4px solid slategray;
-}
-#title {
-	transition: .2s ease-in-out;
-	display: inline-block;
-	vertical-align: middle;
-    font-family: "Raleway", sans-serif;
-	font-weight: 200;
-    font-size: 2.5em;
-	text-decoration: none;
-	color: darkslategray;
-	padding: 0px 10px 0px 10px;
-	height: 100%;
-    box-sizing: border-box;
-}
-#title:hover {
-	transition: .2s ease-in-out;
-	background-color: #bbbbc5;
-	color: #313132;
 }
 .featuredproject {
     transition: 0.1s ease-in-out;
@@ -369,13 +386,11 @@ body#about .navigation#about {
 .postimage {
     height: 150px;
     display: inline-block;
-    padding: 5px;
+    float: left;
     padding: 5px 5px 5px 0;
 }
-div.postblock>img.postimage+p {
-    display: inline-block;
-    width: 75%;
-    vertical-align: top;
+div.imagepost {
+    min-height: 260px;
 }
 
 /* Pagination */
@@ -453,34 +468,27 @@ screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
         height: 82px;
         position: absolute;
     }
+    nav li {
+        height: auto;
+    }
+    nav li:first-child {
+        width: 100%;
+    }
+    nav li>ul {
+        position: absolute;
+        visibility: hidden;
+        display: list-item;
+    }
+    nav li>ul>li {
+        display: list-item;
+        float: none;
+    }
+    nav ul>li:hover>ul {
+        visibility: hidden;
+    }
     .navigation {
-        height: 55%;
+        padding: 6px 10px 9px 10px;
     }
-    .dropDownContainer:hover>.dropDownMenu {
-        margin-left: -111px;
-        margin-top: 44px;
-    }
-    .dropDownContainer:hover>.hiddenCloseButtonMobile {
-        display: inline-block;
-        position: absolute;
-        font-size: 35px;
-        background-color: #bbbbc5;
-        padding-left: 43px;
-        padding-right: 43px;
-        text-decoration: none;
-        color: darkslategray;
-    }
-    .dropDownContainer>.dropDownMenu {
-        display: none;
-    }
-    .dropDownContainer:hover>.dropDownMenu, .dropDownContainer:focus>.dropDownMenu {
-        display: none;
-        position: absolute;
-    }
-    .dropDownContainer:hover>.navigation {
-        background-color: #bbbbc5;
-    }
-
     #title {
         width: 100%;
         height: auto;
