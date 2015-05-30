@@ -209,9 +209,8 @@ pre>code {
     float: right;
 }
 .autoScaleImage {
-    max-height: intrinsic;
-    max-width: intrinsic;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 nav {
     position: fixed;
@@ -503,6 +502,9 @@ screen and (max-width: 1136px) and (min-device-pixel-ratio: 2){
     .content-wrap {
         text-align: left;
         width: 98%;
+    }
+    .autoScaleImage {
+        width: 100%;
     }
     .featuredproject {
         width: 90%;
