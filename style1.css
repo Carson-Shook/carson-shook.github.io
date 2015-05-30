@@ -211,6 +211,7 @@ pre>code {
 .autoScaleImage {
     height: auto;
     width: auto;
+    max-width: 100%;
 }
 nav {
     position: fixed;
