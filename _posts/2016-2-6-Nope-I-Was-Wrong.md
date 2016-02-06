@@ -3,8 +3,8 @@ layout: post
 title: Nope, I Was Wrong
 published: true
 comments: true
+image: ../img/blinkin.png
 ---
-![Eh, Blinkin](../img/blinkin.png)
 
 Turns out the certificate that I got was not what I thought it was. My certificate is still set to expire in March. I'll be honest, I do not understand certificates one bit. I understand what they *do*, but I have no idea how they work and what's what. If anyone out there has a concise explanation of how code signing works, and how different types of certs (root, intermediate, etc.) work, please let me know in the comments. Looks like I will have to drop $99 to update BPM after all.
 
