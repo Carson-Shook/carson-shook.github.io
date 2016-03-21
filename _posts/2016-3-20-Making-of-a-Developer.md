@@ -15,7 +15,7 @@ There is one more piece to this puzzle though, and that is the [Apple Worldwide 
 
 ### That Brings Us to the Present
 
-On the 25th of February, an update went out for the core branch of BPM. I had been playing *Kingdom Hearts: Birth by Sleep* all that day, but when I eventually noticed, I went through the usual routine of updating my repo, compiling, and then previewing/building the add-on in the extension builder. To my surprise, Safari told me that my certificate was not valid. I checked, and—to my surprise—the old WWDR cert expiration had taken my supposedly valid Safari cert down with it (I think so anyway. I wouldn't really matter in the end anyway since I'd have to renew in a few weeks anyway). So began the journey.
+On the 25th of February, an update went out for the core branch of BPM. I had been playing *Kingdom Hearts: Birth by Sleep* all that day, but when I eventually noticed, I went through the usual routine of updating my repo, compiling, and then previewing/building the add-on in the extension builder. To my surprise, Safari told me that my certificate was not valid. I checked, and—to my surprise—the old WWDR cert expiration had taken my supposedly valid Safari cert down with it (I think so anyway. It wouldn't really matter in the end anyway since I'd have to renew in a few weeks anyway). So began the journey.
 
 First things first, I had to fix my name. Even though all of Apple's other services have my correct name, for some reason developer.apple.com had my father's name on record. This probably had to do with his credit card being the first card tied to my account from way back when I first signed up for iTunes. This seemed straight forward enough.
 
