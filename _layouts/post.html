@@ -4,11 +4,14 @@ layout: default
 <article>
 {% include post_header.html %}
 {% if page.image %}
-<div class="centering">
-<img src="../{{ page.image }}" class="autoScaleImage"/>
-<br>
-<br>
+<div class="centering" id="postheaderimageblock">
+    <div class="centering" id="postheaderimagebackgroundblock" style="background-image: url('../{{ page.image }}');">
+        <img src="../{{ page.image }}" class="autoScaleImage" style="visibility: hidden;"/>
+    </div>
+    <img src="../{{ page.image }}" class="autoScaleImage" style="position: relative;"/>
 </div>
+<br>
+<br>
 {% endif %}
 {{ content }}
 </article>
@@ -18,7 +21,7 @@ layout: default
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES * * */
         var disqus_shortname = 'carson-shook';
-        
+
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

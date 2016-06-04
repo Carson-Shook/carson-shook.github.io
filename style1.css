@@ -399,6 +399,22 @@ body#blog>main>div>article>p>img
     margin-right: auto;
     max-width: 100%;
 }
+#postheaderimageblock {
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+}
+#postheaderimagebackgroundblock {
+    position: absolute;
+    width: 100%;
+    background-size: 100%;
+    background-position: center center;
+    filter: blur(8px) drop-shadow(0 0 10px black);
+    transform: scale(1.1, 1.1);
+}
+div#article>div>div>div>img {
+    visibility: hidden;
+}
 
 /* Pagination */
 .pagination {
@@ -512,7 +528,7 @@ screen and (max-width: 667px) and (min-device-pixel-ratio: 2) {
         width: 98%;
     }
     .autoScaleImage {
-        width: 100%;
+        max-width: 100%;
     }
     .featuredproject {
         width: 90%;
@@ -578,6 +594,16 @@ screen and (max-width: 667px) and (min-device-pixel-ratio: 2) {
         float: left;
         text-align: left;
     }
+    #postheaderimageblock {
+        font-size: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    #postheaderimagebackgroundblock {
+        position: absolute;
+        width: 100%;
+        display: none;
+    }
 }
 @media screen and (max-width: 667px) and (orientation: landscape),
 screen and (max-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
@@ -592,12 +618,22 @@ screen and (max-width: 667px) and (orientation: landscape) and (min-device-pixel
         font-size: 0.8em;
         text-align: left;
     }
+    #postheaderimageblock {
+        font-size: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    #postheaderimagebackgroundblock {
+        position: absolute;
+        width: 100%;
+        display: none;
+    }
 }
 @media screen and (min-width: 667px) and (orientation: landscape),
 screen and (min-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-width: 667px) and (orientation: landscape) and (min-device-pixel-ratio: 2) {
     p>img {
-        width: 80%;
+        max-width: 80%;
     }
 }
 @media screen and (min-width: 736px) and (orientation: landscape),
