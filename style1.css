@@ -409,7 +409,8 @@ body#blog>main>div>article>p>img
     width: 100%;
     background-size: 100%;
     background-position: center center;
-    filter: blur(8px) drop-shadow(0 0 10px black);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
     transform: scale(1.1, 1.1);
 }
 div#article>div>div>div>img {
