@@ -199,6 +199,18 @@ pre>code {
 .rightalign {
     text-align: right;
 }
+.centeringhorizontalouter {
+    display: block;
+    overflow: scroll;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.centeringhorizontal {
+    text-align: center;
+    white-space: nowrap;
+}
 .centering {
     text-align: center;
 }
@@ -333,6 +345,14 @@ body#about .navigation#about {
     max-width: 800px;
 }
 .featuredproject:hover {
+    opacity: 0.9;
+}
+.lessfeaturedproject {
+    transition: 0.1s ease-in-out;
+    width: 180px;
+    border-radius: 10px;
+}
+.lessfeaturedproject:hover {
     opacity: 0.9;
 }
 #latestpost {
