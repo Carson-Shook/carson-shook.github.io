@@ -11,7 +11,7 @@ As far as side projects go, I've been messing with some stuff, but haven't been 
 
 I also have a project that's mostly just s silly experiment with HTML5 Canvas stuff. I was inspired after seeing a clever bit of [manipulation to the color pallet of a GIF](http://www.effectgames.com/demos/canvascycle/), giving the appearance of moving skies and running water without any actual movement. The idea is mostly just a color-picker that lets colors be substituted and replaced in live time. I don't know whether or not I'll actually do anything with it, but that's mostly just because I've been too busy to care for the most part.
 
-Finally, this post wouldn't be complete without something regarding BPM. So a while back I posted about [Apple's increased cost of Safari Extension development]({% post_url 2015-6-9-S-O-S-E-Save-Our-Safari-Extensions %}), and because no clarification was ever posted, I assumed the worst. Then I got this email. Oh how I had hoped that this moment would come.
+Finally, this post wouldn't be complete without something regarding BPM. So a while back I posted about [Apple's increased cost of Safari Extension development]({% post_url 2015-06-09-S-O-S-E-Save-Our-Safari-Extensions %}), and because no clarification was ever posted, I assumed the worst. Then I got this email. Oh how I had hoped that this moment would come.
 
 ![Safari Developer Certificate Renewal Email](/img/DevEmailRenewal.png)
 

@@ -14,7 +14,7 @@ title: Carson Shook - Blog
 <h3>{{ post.title }}</h3>
 <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
 {% if post.image %}
-<img src={{ post.image }} class="postimage">
+<img src={{ post.image | relative_url }} class="postimage">
 {% endif %}
 <p>{{ post.content | strip_html | truncatewords: 80 }}</p>
 </div></a>
