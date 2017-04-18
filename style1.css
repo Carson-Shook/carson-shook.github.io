@@ -96,6 +96,14 @@ ul {
 li {
     margin-bottom: 15px;
 }
+ol {
+    color: #333;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 150%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 table {
     font-size: 1.2em;
     font-weight: 300;
