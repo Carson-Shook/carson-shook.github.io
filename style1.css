@@ -346,8 +346,7 @@ body#about .navigation#about {
 }
 .featuredproject {
     transition: 0.1s ease-in-out;
-    width: 48%;
-    border-radius: 10px;
+    width: 50%;
     max-height: 500px;
     max-width: 800px;
 }
@@ -414,7 +413,7 @@ body#about .navigation#about {
     height: 150px;
     display: inline-block;
     float: left;
-    padding: 5px 5px 5px 0;
+    padding: 5px 10px 5px 0;
 }
 div.imagepost {
     min-height: 260px;
