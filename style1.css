@@ -73,6 +73,16 @@ h3 {
 	font-size: 1.4em;
     margin: 0;
     margin-top: 0.8em;
+    margin-bottom: 0.2em;
+	color: #313132;
+}
+h4 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 1.2em;
+    margin: 0;
+    margin-top: 0.8em;
+    margin-bottom: 0.2em;
 	color: #313132;
 }
 p {
@@ -185,14 +195,14 @@ pre>code {
     padding-left: 40px;
 }
 .highlight {
-    margin: 0 2em;
-    padding: 1em 1.5em;
-    border: 1px solid #c3c3c6;
+    /* margin: 0 2em; */
+    /* padding: 1em 1.5em; */
+    /* border: 1px solid #c3c3c6; */
     overflow: auto;
     border-radius: 4px;
     font-size: 1.1em;
     color: darkslategray;
-    background-color: #e3e3e6;
+    /* background-color: #e3e3e6; */
 }
 .content-wrap {
 	text-align: left;
