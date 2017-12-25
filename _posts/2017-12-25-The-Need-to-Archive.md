@@ -4,7 +4,7 @@ title: The Need to Archive
 published: true
 comments: true
 ---
-I never used to really understand people who downloaded everything that they came across. I also used to believe that anything that existed on the internet could never truly be erased. All of that changed recently when a I saw a video that I had liked from the MLP fandom get re-uploaded to a channel that tracks this kind of deleted content. At this point, I paused and said to myself, 
+I never used to really understand people who downloaded everything that they came across. I also used to believe that anything that existed on the internet could never truly be erased. All of that changed recently when I saw a video that I had liked from the MLP fandom get re-uploaded to a channel that tracks this kind of deleted content. At this point, I paused and said to myself, 
 
 "Maybe downloading all of your favorite stuff isn't so crazy. I got lucky, but what if that channel hadn't existed? Good thing that someone out there is doing this kind of thing for me."
 
