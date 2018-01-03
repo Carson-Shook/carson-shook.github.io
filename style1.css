@@ -645,9 +645,6 @@ screen and (max-width: 667px) and (min-device-pixel-ratio: 2) {
 @media screen and (max-width: 667px) and (orientation: landscape),
 screen and (max-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
 screen and (max-width: 667px) and (orientation: landscape) and (min-device-pixel-ratio: 2) {
-    p {
-        font-size:0.7em;
-    }
     #featuredproject {
         width: 48%;
     }
