@@ -2,24 +2,25 @@
 
 html {
     background-color: whitesmoke;
+    -webkit-text-size-adjust: none;
 }
 body {
     text-align: center;
     font-family: "Helvetica Neue","Arial","Liberationsans","Freesans",sans-serif;
-	font-size: 1em;
+    font-size: 1em;
     font-weight: 400;
     padding: 0;
     border: 0;
     margin: 0;
 }
 header {
-	display: inline-block;
-	font-family: "Raleway", sans-serif;
-	font-weight: 900;
-	font-size: 1.2em;
-	vertical-align: 35%;
-	width: 100%;
-	/*background-color: slategray;*/
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    vertical-align: 35%;
+    width: 100%;
+    /*background-color: slategray;*/
 }
 main {
     background-color: whitesmoke;
@@ -29,13 +30,13 @@ main {
     width: 100%;
 }
 article {
-	padding: 0px;
+    padding: 0px;
 }
 footer {
-	font-weight: 500;
-	font-size: 1.0em;
+    font-weight: 500;
+    font-size: 1.0em;
     color: #99999c;
-	margin-top: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 a {
@@ -53,43 +54,43 @@ hr {
     margin: 0;
 }
 h1 {
-	font-family: "Raleway", sans-serif;
-	font-weight: 300;
-	font-size: 3em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 3em;
     margin-top: 0px;
     margin-bottom: 0em;
 }
 h2 {
-	font-family: "Raleway", sans-serif;
-	font-weight: 300;
-	font-size: 1.6em;
-	color: darkslategray;
-	margin-top: 0px;
-	margin-bottom: 1.4em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    color: darkslategray;
+    margin-top: 0px;
+    margin-bottom: 1.4em;
 }
 h3 {
-	font-family: "Raleway", sans-serif;
-	font-weight: 600;
-	font-size: 1.4em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
     margin: 0;
     margin-top: 0.8em;
     margin-bottom: 0.2em;
-	color: #313132;
+    color: #313132;
 }
 h4 {
-	font-family: "Raleway", sans-serif;
-	font-weight: 600;
-	font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
     margin: 0;
     margin-top: 0.8em;
     margin-bottom: 0.2em;
-	color: #313132;
+    color: #313132;
 }
 p {
-	font-weight: 400;
-	font-size: 1.2em;
-	line-height: 150%;
-	margin-top: 0px;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 150%;
+    margin-top: 0px;
     margin-bottom: 1em;
     color:#333;
     -webkit-font-smoothing: antialiased;
@@ -138,8 +139,8 @@ code {
     padding: 0 .5em 0 .5em;
     border: 1px solid #c3c3c6;
     background-color: #e3e3e6;
-	border-radius: 4px;
-	color: darkslategray;
+    border-radius: 4px;
+    color: darkslategray;
     display: inline-block;
     line-height: 140%;
     font-weight: 600;
@@ -205,9 +206,9 @@ pre>code {
     /* background-color: #e3e3e6; */
 }
 .content-wrap {
-	text-align: left;
-	width: 70%;
-	margin: auto;
+    text-align: left;
+    width: 70%;
+    margin: auto;
     margin-bottom: 0;
 }
 .leftalign {
@@ -346,7 +347,7 @@ nav ul>li:hover>ul, ul>li:hover .dropdownnode {
     color: #313132;
 }
 body#blog .navigation#blog {
-	border-top: 4px solid slategray;
+    border-top: 4px solid slategray;
 }
 body#projects .navigation#projects {
     border-top: 4px solid slategray;
@@ -463,7 +464,7 @@ div#article>div>div>div>img {
     height: 50px;
 }
 .postnav {
-	transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
@@ -471,14 +472,14 @@ div#article>div>div>div>img {
     -webkit-box-sizing:border-box;
     font-weight: 400;
     color: darkslategray;
-	text-decoration: none;
-	padding: 12px 10px 0px 10px;
+    text-decoration: none;
+    padding: 12px 10px 0px 10px;
     height: 100%;
 }
 .postnav:hover {
-	transition: .2s ease-in-out;
-	background-color: #bbbbc5;
-	color: #313132;
+    transition: .2s ease-in-out;
+    background-color: #bbbbc5;
+    color: #313132;
     text-decoration: none;
 }
 .postnavinactive {
@@ -505,20 +506,20 @@ div#article>div>div>div>img {
     float: right;
 }
 #previous {
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-	filter: FlipH;
-	-ms-filter: "FlipH";
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
     height: 28px;
-	vertical-align: -40%;
-	padding-left: 4px;
+    vertical-align: -40%;
+    padding-left: 4px;
 }
 #next {
     height: 28px;
-	vertical-align: -40%;
-	padding-left: 4px;
+    vertical-align: -40%;
+    padding-left: 4px;
 }
 /* Media Query Differences */
 @media screen and (max-width: 667px),
