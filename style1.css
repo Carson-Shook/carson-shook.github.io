@@ -525,6 +525,25 @@ div#article>div>div>div>img {
 @media screen and (max-width: 667px),
 screen and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
 screen and (max-width: 667px) and (min-device-pixel-ratio: 2) {
+    ul {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 120%;
+        color:#333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    li {
+        margin-bottom: 15px;
+    }
+    ol {
+        color: #333;
+        font-weight: 400;
+        font-size: 1.0em;
+        line-height: 120%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
     nav {
         height: 82px;
         position: absolute;
