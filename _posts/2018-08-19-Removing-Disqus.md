@@ -1,0 +1,9 @@
+---
+layout: post
+title: Removing Disqus
+published: true
+comments: true
+---
+After writing my [Privacy Policy](https://www.carsonshook.com/privacypolicy/) in the midst of the whole GDPR thing, I kind of realized that I didn't much like that Disqus could still potentially be tracking users of the site (even though I had all of the tracking/telemetry data turned off) since they do keep a session cookie for the current user. I think it's a good platform for people who do need comments and the ability to monetize, but at present, I need neither of those things. No one really comments on my site (not to mention that I barely post), and I am not looking to make money from traffic to it. If I needed money, I'd just sell my applications. I did have one other concern, and that was regarding Disqus apparently having the ability to ban users from commenting on Disqus comment systems because of their actions on a single website.
+
+I have always believed that a person's actions in one part of the internet should not weigh against their actions in another until a body of proof that they only act with malicious intent has been gathered. Disqus' ToS and content policy seemed to go against that idea, so I have removed it from my site. In its place, I now have some share buttons created with [sharingbuttons.io](https://github.com/mxstbr/sharingbuttons.io). They do not contain any JavaScript, nor do they perform any additional GET/POST requests on page load, so they should not be capable of any tracking whatsoever until you actually click them. I admit, it's not ideal, but we are at a very strange place regarding the crossroads of social media and freedom of speech, and I suspect it will be a few more years before anything concrete is decided about these massive third-party networks. So for the time being, enjoy one less website tracking you! :)
